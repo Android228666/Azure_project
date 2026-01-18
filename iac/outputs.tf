@@ -22,3 +22,11 @@ output "eventHubConnectionString" {
   value     = azurerm_eventhub_authorization_rule.sendListen.primary_connection_string
   sensitive = true
 }
+
+output "databricksWorkspaceName" {
+  value = azurerm_databricks_workspace.databricksWorkspace.name
+}
+
+output "databricksWorkspaceUrl" {
+  value = azurerm_databricks_workspace.databricksWorkspace.workspace_url
+}

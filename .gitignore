@@ -14,3 +14,7 @@ crash.*.log
 Thumbs.db
 .vscode/
 .idea/
+
+
+# env/secrets
+.env

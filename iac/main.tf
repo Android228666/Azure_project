@@ -95,3 +95,14 @@ resource "azurerm_eventhub_authorization_rule" "sendListen" {
   send   = true
   manage = false
 }
+
+
+resource "azurerm_databricks_workspace" "databricksWorkspace" {
+  name                = "dbxFinanceAnomaly"
+  resource_group_name = azurerm_resource_group.resourceGroup.name
+  location            = azurerm_resource_group.resourceGroup.location
+
+  sku = "standard"
+
+  tags = var.tags
+}
