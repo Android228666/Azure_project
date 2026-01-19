@@ -12,7 +12,7 @@
 # COMMAND ----------
 
 storageAccountName = "stfinanceanomalyqk8fmw"
-storageAccountKey = "NvbKS3k8GoGa+VyRNS4yl47HilP83YIMEDE0Cm137CkxGnLih/b+7Qm71me1+MeHauT+CwzvyfJ2+AStuQP/vw=="
+storageAccountKey = "<SET_IN_DATABRICKS>"
 
 spark.conf.set(
   f"fs.azure.account.key.{storageAccountName}.dfs.core.windows.net",
