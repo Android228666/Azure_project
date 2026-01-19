@@ -15,9 +15,9 @@ locals {
   )
 
   # camelCase in Azure where allowed
-  resourceGroupName      = "rgFinanceAnomaly"
-  eventHubNamespaceName  = "ehFinanceAnomaly${random_string.suffix.result}"
-  eventHubName           = "transactionsStream"
+  resourceGroupName     = "rgFinanceAnomaly"
+  eventHubNamespaceName = "ehFinanceAnomaly${random_string.suffix.result}"
+  eventHubName          = "transactionsStream"
 
   # storage containers must be lowercase
   bronzeContainerName = "bronze"
